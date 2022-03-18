@@ -1,0 +1,97 @@
+a{
+    text-decoration: none;
+    color:rgba(0,0,0,0.87);
+    font-size: 14px;
+
+}
+.language{
+    padding: 5px 10px 5px 10px;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    font-family: Arial,sans-serif;
+}
+
+div{
+    display: block;
+}
+.form_search{
+    width: 100%;
+    text-align: center;
+}
+
+.top_block{
+    height: 60px;
+}
+
+.gmail, .images{
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+.icon_menu {
+    padding:0px 15px 0px 0px
+}
+.logo_block{
+    height: 290px;
+    position: relative;
+
+}
+
+.logo_block a {
+    width: 100%;
+
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+.search_block{
+    height: 140px;
+    position: relative;
+    
+}
+.four{
+    width: 100%;
+    height: 365px;
+    text-align: center;
+}
+.five{
+    background:#f2f2f2 ;
+    color: #70757a;
+    width: 100%;
+    height: 94px;
+    text-align: left;
+
+}
+.ll{
+    display: flex;
+    float: left;
+}
+.rr{
+    display: flex;
+    float: right;
+}
+.endd{
+    padding: 15px 15px;
+    /* background:#f2f2f2 ; */
+    color: #70757a;
+    font-size: 14px;
+}
+
+input[type=text]{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+}
+
+
