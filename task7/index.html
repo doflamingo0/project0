@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task 7 Demo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form id="form">
+		<label for='author'>Author: </label>
+		<input type='search' id='author' name='author' value=''><br>
+		<label for='price'>Price: </label>
+		<input type='search' id='min_price' name='min_price' placeholder='min' value=''>
+		<input type='search' id='max_price' name='max_price' placeholder='max' value=''>
+		<input type='button' value='Search' onclick='view()'>
+	</form>
+	<h1>Danh sách các quyển sách</h1>
+	<table id="table" style="border: 1px solid black">
+		<tr id="header">
+			<th>ID</th>
+			<th>Name</th>
+			<th>Author</th>
+			<th>Price</th>
+			<th>Category</th>
+		</tr>
+	</table>
+
+	<script src="main.js"> </script>
+</body>
+</html>
