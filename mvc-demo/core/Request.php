@@ -44,7 +44,7 @@ class Request {
 
 		if ($this->method() === 'post') {
 			foreach ($_POST as $k => $v) {
-				echo "$v<br>";
+				// echo "$v<br>";
 				$body[$k] = filter_input(INPUT_POST, $k, FILTER_SANITIZE_SPECIAL_CHARS);
 			}
 		}

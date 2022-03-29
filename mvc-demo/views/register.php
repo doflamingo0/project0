@@ -1,11 +1,35 @@
-<h1>Create an account</h1>
+<?php 
+use app\core\form\Form;
+require_once "./../core/form/Form.php";
+?>
 
-<form action="" method='post'>
+<h1>Create an account</h1>
+<?php $form = Form::begin('', "post") ?>
+	<div class="row">
+		<div class="col">
+			<?php echo $form->field($model, 'fname')  ?>
+		</div>
+		<div class="col">
+			<?php echo $form->field($model, 'lname')  ?>
+		</div>
+	</div>
+	<?php echo $form->field($model, 'email')  ?>
+	<?php echo $form->field($model, 'password')->passwordField()   ?>
+	<?php echo $form->field($model, 'confirmPassword')->passwordField()  ?>
+	<button type="submit" class="btn btn-primary">Submit</button>
+<?php echo Form::end() ?>
+
+<!-- <form action="" method='post'>
 	<div class="row">
 		<div class="col">
 			<div class="form-group">
 				<label>First name</label>
-				<input type="text" name="fname" class="form-control">
+				<input type="text" name="fname" value="<?php echo $model->fname; ?>" 
+				class="form-control<?php echo $model->hasError('fname')?' is-invalid':'' ?>">
+			
+			<div class="invalid-feedback">
+				<?php echo $model->getFirstError('fname')?>
+			</div>
 			</div>
 		</div>
 		<div class="col">
@@ -26,8 +50,8 @@
   </div>
   <div class="form-group">
     <label>Confirm Password</label>
-    <input type="password" name="confirm" class="form-control">
+    <input type="password" name="confirmPassword" class="form-control">
   </div>
   <br>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form> -->
